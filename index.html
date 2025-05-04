@@ -1,47 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leather Craft Store</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Leather Craft Store</h1>
-    <p>Premium Handmade Leather Bags</p>
-  </header>
 
-  <main class="product-grid">
-    <div class="product-card">
-      <img src="https://i.imgur.com/zYxDCQa.jpeg" alt="Bag 1">
-      <h3>Classic Leather Satchel</h3>
-      <p>₹3,499</p>
-    </div>
-    <div class="product-card">
-      <img src="https://i.imgur.com/gWaRzu9.jpeg" alt="Bag 2">
-      <h3>Brown Shoulder Bag</h3>
-      <p>₹2,999</p>
-    </div>
-    <div class="product-card">
-      <img src="https://i.imgur.com/nA3zUYO.jpeg" alt="Bag 3">
-      <h3>Vintage Travel Bag</h3>
-      <p>₹4,499</p>
-    </div>
-    <div class="product-card">
-      <img src="https://i.imgur.com/W5DMe6n.jpeg" alt="Bag 4">
-      <h3>Elegant Office Bag</h3>
-      <p>₹3,799</p>
-    </div>
-    <div class="product-card">
-      <img src="https://i.imgur.com/Fih0UlT.jpeg" alt="Bag 5">
-      <h3>Casual Leather Tote</h3>
-      <p>₹2,299</p>
-    </div>
-  </main>
+<header>
+  <h1>Leather Craft Store</h1>
+  <p>Premium Handmade Leather Bags</p>
+</header>
 
-  <footer>
-    <p>© 2025 Leather Craft Store. All rights reserved.</p>
-  </footer>
+<div class="container">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x150?text=Classic+Satchel" alt="Classic Leather Satchel">
+    <h3>Classic Leather Satchel</h3>
+    <p>₹3,499</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x150?text=Brown+Shoulder+Bag" alt="Brown Shoulder Bag">
+    <h3>Brown Shoulder Bag</h3>
+    <p>₹2,999</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x150?text=Vintage+Travel+Bag" alt="Vintage Travel Bag">
+    <h3>Vintage Travel Bag</h3>
+    <p>₹4,499</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250x150?text=Elegant+Office+Bag" alt="Elegant Office Bag">
+    <h3>Elegant Office Bag</h3>
+    <p>₹3,799</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Leather Craft Store. All rights reserved.
+</footer>
+
 </body>
 </html>
